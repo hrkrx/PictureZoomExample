@@ -1,0 +1,13 @@
+﻿<Window x:Class="WPF_TestApp.Zoom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Zoom" Height="300" Width="200" ScrollViewer.VerticalScrollBarVisibility="Disabled" Topmost="True" Focusable="False" IsHitTestVisible="False" IsTabStop="False" WindowStyle="None" MaxWidth="200" MaxHeight="300" MinHeight="300" MinWidth="199" Background="Transparent" AllowsTransparency="True">
+    <Grid IsHitTestVisible="False" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+        <Image HorizontalAlignment="Left" Source="C:\Users\User1X\Pictures\LensZoom.png" />
+        <Image x:Name="details" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="200" Margin="0,1,0,0">
+            <Image.Clip>
+                <EllipseGeometry Center="100,100" RadiusX="90" RadiusY="90"/>
+            </Image.Clip>
+        </Image>
+    </Grid>
+</Window>
